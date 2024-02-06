@@ -1,6 +1,6 @@
 # ORAC
 ### My ORAC solutions which all produce correct answers.  
-Input and output files have not been included in problem directories. If you want to run the solution you will have to create your own `input.txt` file named according to the problem statement and ensure it contains valid input.  
+Problem statements, as well as input and output files have not been included this repository. If you want to run the solution you will have to create your own `input.txt` file named according to the problem statement and ensure it contains valid input.  
 
 All problems are property of [ORAC](https://orac2.info/hub/)  
 
