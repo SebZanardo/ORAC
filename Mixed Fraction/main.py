@@ -1,5 +1,5 @@
 with open('mixin.txt', 'r') as input_file:
-    n, d = map(int, input_file.readline().strip().split())
+    n, d = map(int, input_file.readline().split())
 
 a = int(n/d)
 b = n % d

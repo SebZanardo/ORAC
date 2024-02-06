@@ -1,5 +1,5 @@
 with open('sitin.txt', 'r') as input_file:
-    r, s = map(int, input_file.readline().strip().split())
+    r, s = map(int, input_file.readline().split())
     t = int(input_file.readline())
 
 if r * s >= t:
