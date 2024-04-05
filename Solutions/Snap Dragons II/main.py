@@ -1,4 +1,4 @@
-with open('snapin.txt', 'r') as input_file:
+with open("snapin.txt", "r") as input_file:
     w, h, rx, ry, sx, sy = map(int, input_file.readline().split())
 
 # Only board dimensions created between the two dragons start position needed.
@@ -11,9 +11,9 @@ nw = abs(rx - sx)
 nh = abs(ry - sy)
 path_length = nw + nh - 1  # Find path between dragons
 
-winner = 'SCARLET'
+winner = "SCARLET"
 if path_length % 2 == 0:
-    winner = 'ROSE'
+    winner = "ROSE"
 
-with open('snapout.txt', 'w') as output_file:
+with open("snapout.txt", "w") as output_file:
     output_file.write(str(winner))

@@ -1,4 +1,4 @@
-input_file = open('bendin.txt', 'r')
+input_file = open("bendin.txt", "r")
 ax1, ay1, ax2, ay2 = map(int, input_file.readline().split())
 bx1, by1, bx2, by2 = tuple(map(int, input_file.readline().split()))
 input_file.close()
@@ -22,6 +22,6 @@ if ax2 > bx1 and ax1 < bx2 and ay2 > by1 and ay1 < by2:
     oh = abs(oy2 - oy1)
     area -= ow * oh
 
-output_file = open('bendout.txt', 'w')
+output_file = open("bendout.txt", "w")
 output_file.write(str(area))
 output_file.close()

@@ -1,4 +1,4 @@
-input_file = open('hailin.txt', 'r')
+input_file = open("hailin.txt", "r")
 
 steps = []
 while True:
@@ -18,6 +18,6 @@ while True:
         step += 1
     steps.append(step)
 
-with open('hailout.txt', 'w') as output_file:
+with open("hailout.txt", "w") as output_file:
     for step in steps:
-        output_file.write(f'{step}\n')
+        output_file.write(f"{step}\n")

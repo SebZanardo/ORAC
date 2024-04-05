@@ -1,4 +1,4 @@
-with open('rainin.txt', 'r') as input_file:
+with open("rainin.txt", "r") as input_file:
     n, c = map(int, input_file.readline().split())
     nums = [int(line) for line in input_file.readlines()]
 
@@ -10,5 +10,5 @@ for rainfall in nums:
         break
     day += 1
 
-with open('rainout.txt', 'w') as output_file:
+with open("rainout.txt", "w") as output_file:
     output_file.write(str(day))

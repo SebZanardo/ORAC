@@ -1,4 +1,4 @@
-with open('artin.txt', 'r') as input_file:
+with open("artin.txt", "r") as input_file:
     n = int(input_file.readline())
     points = [tuple(map(int, line.split())) for line in input_file.readlines()]
 
@@ -22,5 +22,5 @@ for point in points:
 
 area = (max_x - min_x) * (max_y - min_y)
 
-with open('artout.txt', 'w') as output_file:
+with open("artout.txt", "w") as output_file:
     output_file.write(str(area))

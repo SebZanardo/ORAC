@@ -1,4 +1,4 @@
-with open('fashin.txt', 'r') as input_file:
+with open("fashin.txt", "r") as input_file:
     n = int(input_file.readline())
 
 notes = [100, 20, 5, 1]
@@ -11,5 +11,5 @@ while n > 0:
             fewest += 1
             break
 
-with open('fashout.txt', 'w') as output_file:
+with open("fashout.txt", "w") as output_file:
     output_file.write(str(fewest))

@@ -9,7 +9,7 @@ triples = []
 for i, num in enumerate(nums):
     if num % 3 != 0:
         continue
-    triples.append(str(i+1))
+    triples.append(str(i + 1))
 
 output_file = open("tripout.txt", "w")
 

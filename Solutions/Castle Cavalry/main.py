@@ -1,4 +1,4 @@
-input_file = open('cavalryin.txt', 'r')
+input_file = open("cavalryin.txt", "r")
 
 n = int(input_file.readline())
 squad_count = {}  # squad_size : knights
@@ -16,7 +16,7 @@ for key, val in squad_count.items():
     if val % key != 0:
         valid = False
 
-output_file = open('cavalryout.txt', 'w')
+output_file = open("cavalryout.txt", "w")
 
 if valid:
     output_file.write("YES\n")

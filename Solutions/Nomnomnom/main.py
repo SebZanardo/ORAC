@@ -1,4 +1,4 @@
-input_file = open('nomin.txt', 'r')
+input_file = open("nomin.txt", "r")
 
 n = int(input_file.readline())
 
@@ -18,5 +18,5 @@ for i in range(n):
     else:
         eaten += food
 
-with open('nomout.txt', 'w') as output_file:
+with open("nomout.txt", "w") as output_file:
     output_file.write(str(hippo))

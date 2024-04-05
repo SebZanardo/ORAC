@@ -1,4 +1,4 @@
-input_file = open('chimin.txt', 'r')
+input_file = open("chimin.txt", "r")
 n = int(input_file.readline())
 a = input_file.readline().strip()
 b = input_file.readline().strip()
@@ -15,30 +15,29 @@ for i, c in enumerate(x):
         valid = False
         break
 
-
-    if inside == 'a':
+    if inside == "a":
         if not in_a:
             slices += 1
-            inside = 'b'
+            inside = "b"
 
-    elif inside == 'b':
+    elif inside == "b":
         if not in_b:
             slices += 1
-            inside = 'a'
+            inside = "a"
 
     else:
         if not in_a:
-            inside = 'b'
+            inside = "b"
         elif not in_b:
-            inside = 'a'
+            inside = "a"
         # Still don't know which one we are inside
         else:
             continue
 
-output_file = open('chimout.txt', 'w')
+output_file = open("chimout.txt", "w")
 if not valid:
-    output_file.write('PLAN FOILED\n')
+    output_file.write("PLAN FOILED\n")
 else:
-    output_file.write('SUCCESS\n')
+    output_file.write("SUCCESS\n")
     output_file.write(str(slices))
 output_file.close()
